@@ -1,4 +1,3 @@
-
 const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
@@ -13,21 +12,15 @@ const multer = require('multer');
 const uploadMiddleware = multer({ dest: 'uploads/' });
 const fs = require('fs');
 
-
 const salt = bcrypt.genSaltSync(10);
 const secret = 'someRandomString';
 
-mongoose.connect(process.env.REACT_APP_MONGODB_URI)
-
-
+mongoose.connect(process.env.REACT_APP_MONGODB_URI)   
 
 app.use(cors({credentials:true, origin:'http://localhost:3000'}));
 app.use(express.json());
 app.use(cookieParser());
 app.use('/uploads', express.static(__dirname + '/uploads'));
-
-
-
 
 app.post('/register', async (req, res) => {
   const {username, password} = req.body;
@@ -123,7 +116,7 @@ app.delete('/post/:id', async (req, res) => {
   const { id } = req.params;
 
   try {
-    // Assuming you want to ensure that the user deleting the post is the author
+    // Validating user that its the author with json token so it can get deleted
     const { token } = req.cookies;
     const decodedToken = jwt.verify(token, secret);
 
