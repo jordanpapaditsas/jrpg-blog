@@ -1,0 +1,390 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  cursor: pointer;
+}
+
+body{
+  color: #222;
+  background-color: rgb(140, 168, 233);
+}
+
+img{
+  max-width: 100%;
+}
+
+main{
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+header{
+  display:flex;
+  justify-content: space-between;
+  align-items: center; 
+  background-color: black;
+  margin-bottom: 2rem;
+}
+
+.login {
+ font-size: 1.2rem;
+ color: white;
+ margin-right: 1rem;
+
+}
+
+.register {
+  font-size: 1.2rem;
+  color: white;
+  margin-right: 1rem;
+}
+
+.login:hover {
+  cursor: pointer;
+  color: rgb(156, 16, 16);
+}
+
+.register:hover {
+  color: rgb(156, 16, 16);
+}
+
+header a{
+  text-decoration:none;
+}
+
+header a.logo{
+  font-weight: bold;
+  font-size: 3rem;
+  margin-left: 2rem;
+  color: white;
+}
+
+header nav{
+  display:flex;
+  gap: 1.7rem;
+}
+
+div.post{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 700px) {
+  div.post{
+      grid-template-columns: .9fr 1.1fr;
+  }
+}
+
+div.post div.texts h2{
+  margin:0;
+  font-size: 2rem;
+}
+
+div.post div.texts a{
+  text-decoration:none;
+  color: inherit;
+}
+
+div.post p.info{
+  margin: 1.7rem 0;
+  color: #888;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  gap: 1rem;
+}
+
+div.post a.author{
+  color:#333;
+}
+
+div.post p.summary{
+  margin: 0.8rem 0;
+  line-height: 1.8rem;
+}
+
+form.login, form.register{
+  max-width: 25rem;
+  margin: 0 auto;
+}
+
+input{
+  display: block;
+  margin-bottom: 0.4rem;
+  width: 100%;
+  padding: 0.4rem 0.6rem;
+  border: 2px solid #ddd;
+  border-radius: 0.5rem;
+  background-color: #fff;
+}
+
+button{
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  background-color: #555;
+  border: 0;
+  color: #fff;
+  border-radius: 0.4rem;
+  padding: 0.6rem 0;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+form.login h1, form.register h1{
+  text-align: center;
+}
+
+div.post-page div.image{
+  max-height: 19rem;
+  display: flex;
+  overflow:hidden;
+}
+
+div.post-page div.image img{
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+}
+
+div.post-page a{
+  color:#0c0c0c;
+  text-decoration: underline;
+}
+
+div.post-page h1{
+  text-align: center;
+  margin: 1rem 0 0.4rem;
+}
+
+div.post-page time{
+  text-align: center;
+  display: block;
+  font-size: 1rem;
+  color: #111010;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+div.post-page div.author{
+  text-align: center;
+  margin-bottom: 1.2rem;
+  font-size: .7rem;
+  font-weight: bold;
+}
+
+div.content p{
+  line-height: 1.7rem;
+  margin: 2rem 0;
+}
+
+div.content li{
+  margin-bottom: 1rem;
+}
+
+div.edit-row{
+  text-align: center;
+  margin-bottom: 1.3rem;
+}
+
+div.post-page a.edit-btn{
+  background-color: #070707;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  text-decoration: none;
+}
+
+a svg{
+  height: 1.3rem;
+}
+
+.summary {
+  font-size: 1.5rem;
+}
+
+.greet, .create-new-post, .logout {
+  font-size: 1.2rem;
+  color: white;
+  margin-right: 1rem;
+}
+
+.greet {
+  margin-right: 20rem;
+}
+
+.create-new-post:hover, .logout:hover {
+  cursor: pointer;
+  color: rgb(156, 16, 16);
+}
+
+.date-time {
+  color: rgb(10, 10, 10);
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  cursor: pointer;
+}
+
+body {
+  color: #222;
+  background-color: rgb(140, 168, 233);
+  font-family: Arial, sans-serif; /* Added a generic font family for better cross-browser compatibility */
+}
+
+img {
+  max-width: 100%;
+  height: auto; /* Ensure images maintain their aspect ratio */
+}
+
+main {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem; /* Add padding to the main content for better readability on small screens */
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap; /* Allow the header content to wrap on small screens */
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  margin-bottom: 2rem;
+  padding: 1rem; /* Add padding to the header for better spacing */
+}
+
+.login,
+.register,
+.greet,
+.create-new-post,
+.logout {
+  font-size: 1.2rem;
+  color: white;
+  margin-right: 1rem;
+}
+
+.greet {
+  margin-right: auto; /* Allow the greeting to take as much space as needed */
+}
+
+.login:hover,
+.register:hover,
+.create-new-post:hover,
+.logout:hover {
+  cursor: pointer;
+  color: rgb(156, 16, 16);
+}
+
+header a {
+  text-decoration: none;
+}
+
+header a.logo {
+  font-weight: bold;
+  font-size: 2rem; /* Adjust the logo font size for better visibility */
+  margin: 1rem;
+  color: white;
+}
+
+header nav {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem; /* Add margin to the top of the navigation for better spacing */
+}
+
+div.post {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 700px) {
+  div.post {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust the grid layout for larger screens */
+  }
+}
+
+div.post div.texts h2 {
+  margin: 0;
+  font-size: 1.8rem; /* Adjust the post title font size for better readability */
+}
+
+div.post p.info {
+  margin: 1rem 0;
+  color: #888;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap; /* Allow the info to wrap on small screens */
+}
+
+div.post a.author {
+  color: #333;
+}
+
+form.login,
+form.register {
+  max-width: 100%; /* Allow the forms to take the full width */
+  margin: 0 auto;
+  padding: 0 1rem; /* Add padding to the forms for better spacing */
+}
+
+input,
+button {
+  margin-bottom: 1rem;
+}
+
+div.post-page div.image {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+div.post-page div.image img {
+  width: 100%;
+}
+
+div.post-page h1,
+div.post-page time,
+div.post-page div.author {
+  margin: 1rem 0;
+}
+
+div.content p {
+  margin: 1rem 0; /* Adjust the margin for better spacing */
+}
+
+div.edit-row {
+  margin-bottom: 1.3rem;
+}
+
+div.post-page a.edit-btn {
+  padding: 1rem; /* Adjust the padding for better spacing */
+}
