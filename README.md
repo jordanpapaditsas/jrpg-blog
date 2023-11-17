@@ -6,7 +6,6 @@ Created for Coding Factory Final Project.
 ## Table of Contents
 
 - [Features](#features)
-- [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [API Endpoints](#api-endpoints)
@@ -19,7 +18,25 @@ Created for Coding Factory Final Project.
 - JWT-based authentication
 - Responsive design (if applicable)
 
-## Getting Started & Installation 
+### Prerequisites
+
+- [Node.js](https://nodejs.org/)
+- [MongoDB](https://www.mongodb.com/)
+
+## Installation 
+
+1. Clone the repository:
+```md
+ git clone https://github.com/jordanpapaditsas/jrpg-blog.git
+ ```
+2. Navigate to the clone project directory:
+ ```md
+ cd jrpg-blog
+ ```
+3. Install Node.js and yarn (donwload and install from https://nodejs.org/en)  
+
+4. Install Project Dependencies
+```md
 - yarn install
 - yarn add nodemon
 - yarn add cors
@@ -27,12 +44,11 @@ Created for Coding Factory Final Project.
 - yarn add bcryptjs
 - yarn add jsonwebtoken
 - yarn add cookie-parser
-
-### Prerequisites
-
-- [Node.js](https://nodejs.org/)
-- [MongoDB](https://www.mongodb.com/)
-
+```
+5. Build the project
+```md
+yarn start
+```
 
 ## API Endpoints
 
