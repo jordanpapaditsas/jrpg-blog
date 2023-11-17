@@ -5,7 +5,6 @@ Created for Coding Factory Final Project.
 
 ## Table of Contents
 
-- [Overview](#overview)
 - [Features](#features)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
