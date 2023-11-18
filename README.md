@@ -46,6 +46,7 @@ Created for Coding Factory Final Project.
 - yarn add bcryptjs
 - yarn add jsonwebtoken
 - yarn add cookie-parser
+- yarn add dotenv
 ```
 5. Build the project
 ```md
@@ -54,11 +55,13 @@ yarn start
 
 ## API Endpoints
 
-- /register (POST): Register a new user.
-- /login (POST): Authenticate and log in a user.
-- /create (POST): Create a post.
 - /post/:id (GET, POST, PUT, DELETE): CRUD operations for blog posts.
 - /edit/:id (PUT) operation.
+- /register (POST): Register a new user.
+- /login (POST): Authenticate and log in a user.
+- /logout (POST): Logs out the current user.
+- /create (POST): Create a post.
+
 
 
 
