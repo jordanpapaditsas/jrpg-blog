@@ -386,4 +386,5 @@ div.post-page a.edit-btn {
 .delete-btn {
   position: absolute;
   left: 44.7%;
+  text-align: center;
 }
