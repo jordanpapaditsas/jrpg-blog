@@ -42,7 +42,9 @@ export default function RegisterPage() {
         onChange={event => setPassword(event.target.value)}
       />
       <button>Register</button>
-      {error && <p style={{ color: 'red' }}>{error}</p>}
+      <div className='error-message'> 
+        {error && <p style={{ color: 'red' }}>{error}</p>}
+      </div>
     </form>
   )
 }

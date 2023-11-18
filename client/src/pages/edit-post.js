@@ -69,12 +69,13 @@ export default function EditPost() {
     <div>
       <form onSubmit={updatePost}>
         {/* ... (other form elements) */}
-        <button style={{ marginTop: '5px' }}>Update post</button>
+        <button style={{ marginTop: '5px' }}>Update post</button> 
       </form>
       
-      <button onClick={deletePost} style={{ marginTop: '5px', marginLeft: '5px', color: 'red' }}>
-        Delete post
-      </button>
+      <button className="delete-btn" onClick={deletePost} style={{ marginTop: '5px', marginLeft: '5px', color: 'red' }}>
+          Delete post
+        </button>
     </div>
   );
 }
+
