@@ -50,7 +50,11 @@ Created for Coding Factory Final Project.
 ```
 5. Build the project
 ```md
-yarn start
+- Open 2 terminals 
+- cd client in first terminal
+- yarn start (starts the project)
+- cd api in second terminal
+- nodemon index.js (to run backend api for data)
 ```
 
 ## API Endpoints
