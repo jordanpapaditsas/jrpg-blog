@@ -13,7 +13,8 @@ Created for Coding Factory Final Project.
 ## Features
 
 - User registration and login
-- Database for storage
+- Form validation with notifications
+- MongoDB Database for storing data
 - CRUD operations for blog posts
 - JWT-based authentication
 - Responsive design (if applicable)
@@ -22,6 +23,7 @@ Created for Coding Factory Final Project.
 
 - [Node.js](https://nodejs.org/)
 - [MongoDB](https://www.mongodb.com/)
+- Visual Studio Code
 
 ## Installation 
 
