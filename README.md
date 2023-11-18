@@ -1,6 +1,6 @@
 # JRPG-Blog    Coding Factory Final Project
 
-A full-stack blog application built with the MERN stack (MongoDB, Express.js, React.js, Node.js). The project includes CRUD operations, user authentication, Database for storing data, and JSON Web Token (JWT) validations.
+A full-stack blog application built with the MERN stack (MongoDB, Express.js, React.js, Node.js). The project includes CRUD operations, user authentication,Form validations, Database for storing data, and JSON Web Token (JWT) validations.
 Created for Coding Factory Final Project.
 
 ## Table of Contents
