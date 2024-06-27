@@ -17,7 +17,7 @@ Created for Coding Factory Final Project.
 - MongoDB Database for storing data
 - CRUD operations for blog posts
 - JWT-based authentication
-- Responsive design (if applicable)
+- Responsive design 
 
 ## Screenshots
 ![image](https://github.com/jordanpapaditsas/jrpg-blog/assets/114758586/ab6b63a6-d745-486e-beb5-faab9faa1031)
